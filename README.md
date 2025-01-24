@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Buldr-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A multi-purpose platform tailored to engineers for showcasing their skills.
 
-## Available Scripts
+This project is the frontend for the Buldr application, built with [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Authentication**:
+  - Uses Firebase Authentication for user sign-up, login, and account management.
+  - Implements secure authentication flows with JWT tokens.
+  - Provides password reset and email verification functionalities.
+  - Stores authentication tokens in local storage for session management.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dashboard**:
+  - Displays personalized information using React components.
+  - Fetches user-specific data from a REST API.
+  - Uses charts and graphs for data visualization with libraries like Chart.js.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Profile Management**:
+  - Allows users to view and edit their profiles.
+  - Uses forms with validation for profile updates.
+  - Stores profile data in a NoSQL database like Firebase Firestore.
 
-### `npm test`
+- **Social Features**:
+  - Enables users to create posts and comments.
+  - Uses a real-time database to update posts and comments dynamically.
+  - Implements like and share functionalities.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Notes Management**:
+  - Allows users to create, view, edit, and delete notes.
+  - Uses a rich text editor for note creation and editing.
+  - Stores notes in a cloud database for persistence.
+  
+- **AI Tools**:
+  - AI Chatbot: Uses a chatbot model to provide conversational AI capabilities.
+  - Text Summarization: Uses a summarization model to generate summaries of text.
+  - Text Paraphrasing: Uses a paraphrasing model to rewrite text.
 
-### `npm run build`
+- **Marketplace**:
+  - Displays a list of products available for purchase.
+  - Allows users to view and manage their orders.
+  - Integrates with a payment gateway like Stripe for transactions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Context Providers**:
+  - Uses React Context API for state management.
+  - Provides context for authentication, user ID, and reading room.
+  - Ensures global state is accessible throughout the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Local Storage**:
+  - Utilizes local storage to persist user preferences and session data.
+  - Stores authentication tokens, language preferences, and other user-specific settings.
+  - Ensures data is retained across browser sessions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Protected Routes**:
+  - Uses React Router for navigation.
+  - Implements route guards to protect sensitive routes.
+  - Redirects unauthenticated users to the login page.
 
-### `npm run eject`
+- **Language Support**:
+  - Supports multiple languages using i18next.
+  - Stores language preference in local storage.
+  - Provides a language switcher in the UI.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Responsive Design**:
+  - Uses Tailwind CSS for styling.
+  - Ensures the application is mobile-friendly and responsive.
+  - Implements a grid system and media queries for layout adjustments.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Animations**:
+  - Uses Lottie for interactive animations.
+  - Integrates animations into the UI for better user experience.
+  - Provides smooth transitions and effects.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Material-UI**: A popular React UI framework for building responsive and modern web applications.
+- **Flowbite**: A component library built on top of Tailwind CSS.
+- **Firebase**: A platform for building web and mobile applications, used here for authentication and real-time database.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **React PDF Renderer**: A library for generating PDF documents in React.
+- **React Markdown Editor**: A markdown editor component for React applications.
+  
+## Run Locally
+
+After cloning the repository, you can run the following commands to start the frontend application:
+
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
