@@ -9,7 +9,6 @@ This project is the frontend for the Buldr application, built with [Create React
 - **Authentication**:
   - Uses Firebase Authentication for user sign-up, login, and account management.
   - Implements secure authentication flows with JWT tokens.
-  - Provides password reset and email verification functionalities.
   - Stores authentication tokens in local storage for session management.
 
 - **Dashboard**:
